@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <style>
+        .form{
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="POST" class="form">
+            
+            <h2>Login page</h2>
+
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username"  name="username" minlength="3" maxlength="20" placeholder="Enter your username...">
+
+            <label for="email">Enter Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email...">
+
+            <label for="password">Enter Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+
+
+            <input type="submit" value="SIGN IN" class="sign_btn">
+            <a href="./registr.html">SIGN UP</a>
+        </form>
+    </div>
+</body>
+</html>
